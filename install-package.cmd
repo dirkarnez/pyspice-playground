@@ -4,4 +4,9 @@ set PATH=%PYTHON_DIR%;%PYTHON_DIR%\Scripts
 
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+
+@REM %USERPROFILE%\Downloads\python-3.10.8-amd64-portable\lib\site-packages\PySpice\Spice\NgSpice\Spice64_dll\dll-vs\ngspice.dll
+
+pyspice-post-installation --install-ngspice-dll
+pyspice-post-installation --check-install
 pause
